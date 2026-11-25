@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBOX Store — Verified Android Apps</title>
+<meta name="description" content="MBOX Store is an independent Android app store. Verified apps from official sources, safe installs, easy updates.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root{
+    --bg:#0d1310; --surface:#16211b; --surface2:#1c2a22;
+    --text:#eef5f0; --muted:#9db4a6; --accent:#2ec4b6; --accent-dark:#0f3d38;
+    --border:#26382e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);
+    font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px}
+  header{padding:44px 0 8px;text-align:center}
+  header img{width:96px;height:96px;border-radius:22px}
+  h1{font-size:34px;font-weight:800;letter-spacing:.2px;margin-top:16px}
+  .tagline{color:var(--muted);font-size:16px;margin-top:6px}
+  .download{margin:28px 0 10px;text-align:center}
+  .btn{display:inline-block;background:var(--accent);color:#06251f;font-weight:800;
+    font-size:18px;text-decoration:none;padding:15px 34px;border-radius:14px}
+  .btn:active{opacity:.85}
+  .meta{color:var(--muted);font-size:13px;margin-top:10px}
+  .trust{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:20px 0 6px}
+  .trust span{background:var(--surface);border:1px solid var(--border);color:var(--muted);
+    font-size:12.5px;padding:6px 12px;border-radius:999px}
+  section{margin:36px 0}
+  h2{font-size:20px;font-weight:700;margin-bottom:14px}
+  .apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px}
+  .app{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:12px 8px;text-align:center;font-size:13.5px}
+  .feat{display:grid;gap:10px}
+  .feat div{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+  .feat b{display:block;font-size:15.5px;margin-bottom:2px}
+  .feat p{color:var(--muted);font-size:14px}
+  ol.steps{margin-left:20px;color:var(--muted);font-size:15px}
+  ol.steps li{margin:6px 0}
+  ol.steps b{color:var(--text)}
+  .note{background:var(--surface2);border:1px solid var(--border);border-radius:12px;
+    padding:14px 16px;color:var(--muted);font-size:14px}
+  footer{border-top:1px solid var(--border);margin-top:44px;padding:22px 0 34px;
+    text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none}
+  footer .links{margin-bottom:8px}
+  footer .links a{margin:0 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="icon.png" alt="MBOX Store logo">
+    <h1>MBOX Store</h1>
+    <p class="tagline">Verified Android apps. Safe installs, easy updates.</p>
+  </header>
+
+  <div class="download">
+    <a class="btn" href="https://github.com/mboxstore/mbox-store/releases/download/v1.0.3/mbox-store-v1.0.3.apk">Download MBOX Store</a>
+    <p class="meta">Version 1.0.3 · APK · 4.7 MB · Free</p>
+  </div>
+
+  <div class="trust">
+    <span>Official sources only</span>
+    <span>SHA-256 verified</span>
+    <span>No ads · No trackers</span>
+  </div>
+
+  <section>
+    <h2>Apps in the store</h2>
+    <div class="apps">
+      <div class="app">Telegram</div>
+      <div class="app">WhatsApp</div>
+      <div class="app">Signal</div>
+      <div class="app">Firefox</div>
+      <div class="app">VLC</div>
+      <div class="app">Brave</div>
+      <div class="app">Tor Browser</div>
+      <div class="app">Proton VPN</div>
+      <div class="app">Psiphon</div>
+      <div class="app">DuckDuckGo</div>
+      <div class="app">Opera Mini</div>
+      <div class="app">Zoom</div>
+      <div class="app">Kodi</div>
+      <div class="app">KeyGuard SMS</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why MBOX Store</h2>
+    <div class="feat">
+      <div><b>Verified before install</b>
+        <p>Every APK is checked against its publisher's signing certificate and SHA-256 hash before the installer opens. If a file doesn't match, it doesn't install.</p></div>
+      <div><b>Official sources</b>
+        <p>Apps come from their official publishers — no mods, no repacks, no cracked versions.</p></div>
+      <div><b>Works offline</b>
+        <p>The catalog is saved on your phone, so you can browse apps even without a connection.</p></div>
+      <div><b>MBOX Pay built in</b>
+        <p>Support developers and buy premium apps with Telegram Stars or USDT, right inside the store.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How to install</h2>
+    <ol class="steps">
+      <li>Tap <b>Download</b> above and save the APK file.</li>
+      <li>Open the file and tap <b>Install</b>. Android may ask you to allow installs from your browser — allow it for this install.</li>
+      <li>If Play Protect shows a warning, tap <b>Install anyway</b> — MBOX Store is distributed outside Google Play, so the warning is expected.</li>
+    </ol>
+  </section>
+
+  <div class="note">
+    MBOX Store is an independent app store and is not affiliated with Google Play.
+    All app names and logos belong to their respective owners.
+  </div>
+
+  <footer>
+    <div class="links">
+      <a href="https://t.me/mboxstoreapp">Telegram Channel</a>
+      <a href="https://github.com/mboxstore/mbox-store">GitHub</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+    © 2026 MBOX Store
+  </footer>
+
+</div>
+</body>
+</html>
