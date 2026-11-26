@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.mbox.store",
+      "sha256_cert_fingerprints": [
+        "03:22:A9:4C:19:EA:01:EA:03:E1:AE:4B:E0:FE:F1:92:B4:5B:F4:98:92:57:17:CA:CD:CD:1C:2B:3D:FD:0A:93"
+      ]
+    }
+  }
+]
