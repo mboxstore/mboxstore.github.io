@@ -32,8 +32,9 @@
   section{margin:36px 0}
   h2{font-size:20px;font-weight:700;margin-bottom:14px}
   .apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:10px}
-  .app{background:var(--surface);border:1px solid var(--border);border-radius:12px;
-    padding:12px 8px;text-align:center;font-size:13.5px}
+  .app{display:block;background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:12px 8px;text-align:center;font-size:13.5px;color:var(--text);text-decoration:none}
+  .app img{width:48px;height:48px;border-radius:12px}
   .feat{display:grid;gap:10px}
   .feat div{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
   .feat b{display:block;font-size:15.5px;margin-bottom:2px}
@@ -73,7 +74,36 @@
   <section>
     <h2>Apps in the store</h2>
     <div class="apps">
-      <div class="app">Telegram</div>
+      <a class="app" href="/app/com.mbox.store/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-mbox-store-v2.png" alt="" loading="lazy"><br>MBOX Store</a>
+      <a class="app" href="/app/com.keyguard.sms/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-keyguard-v2.png" alt="" loading="lazy"><br>KeyGuard SMS</a>
+      <a class="app" href="/app/org.telegram.messenger.web/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-telegram.png" alt="" loading="lazy"><br>Telegram</a>
+      <a class="app" href="/app/com.whatsapp/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-whatsapp.png" alt="" loading="lazy"><br>WhatsApp</a>
+      <a class="app" href="/app/org.thoughtcrime.securesms/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-signal-v2.png" alt="" loading="lazy"><br>Signal</a>
+      <a class="app" href="/app/org.mozilla.firefox/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-firefox-v2.png" alt="" loading="lazy"><br>Firefox</a>
+      <a class="app" href="/app/org.videolan.vlc/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-vlc-v2.png" alt="" loading="lazy"><br>VLC</a>
+      <a class="app" href="/app/com.opera.mini.native/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-operamini.png" alt="" loading="lazy"><br>Opera Mini</a>
+      <a class="app" href="/app/com.psiphon3/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-psiphon.png" alt="" loading="lazy"><br>Psiphon</a>
+      <a class="app" href="/app/org.torproject.torbrowser/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-torbrowser.png" alt="" loading="lazy"><br>Tor Browser</a>
+      <a class="app" href="/app/ch.protonvpn.android/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-protonvpn.png" alt="" loading="lazy"><br>Proton VPN</a>
+      <a class="app" href="/app/com.brave.browser/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-brave-v2.png" alt="" loading="lazy"><br>Brave Browser</a>
+      <a class="app" href="/app/com.duckduckgo.mobile.android/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-duckduckgo.png" alt="" loading="lazy"><br>DuckDuckGo</a>
+      <a class="app" href="/app/us.zoom.videomeetings/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-zoom.png" alt="" loading="lazy"><br>Zoom Workplace</a>
+      <a class="app" href="/app/org.xbmc.kodi/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-kodi.png" alt="" loading="lazy"><br>Kodi</a>
+      <a class="app" href="/app/com.ton_keeper/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-tonkeeper.png" alt="" loading="lazy"><br>Tonkeeper</a>
+      <a class="app" href="/app/com.wallet.crypto.trustapp/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-trustwallet.png" alt="" loading="lazy"><br>Trust Wallet</a>
+      <a class="app" href="/app/org.outline.android.client/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-outline.png" alt="" loading="lazy"><br>Outline</a>
+      <a class="app" href="/app/com.v2ray.ang/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-v2rayng.png" alt="" loading="lazy"><br>v2rayNG</a>
+      <a class="app" href="/app/app.hiddify.com/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-hiddify.png" alt="" loading="lazy"><br>Hiddify</a>
+      <a class="app" href="/app/org.getlantern.lantern/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-lantern.png" alt="" loading="lazy"><br>Lantern</a>
+      <a class="app" href="/app/org.schabi.newpipe/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-newpipe.png" alt="" loading="lazy"><br>NewPipe</a>
+      <a class="app" href="/app/io.safepal.wallet/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-safepal.png" alt="" loading="lazy"><br>SafePal</a>
+      <a class="app" href="/app/com.stremio.one/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-stremio.png" alt="" loading="lazy"><br>Stremio</a>
+      <a class="app" href="/app/com.binance.dev/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-binance.png" alt="" loading="lazy"><br>Binance</a>
+      <a class="app" href="/app/com.mix555.muser/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-555mix.png" alt="" loading="lazy"><br>555Mix</a>
+      <a class="app" href="/app/com.activelive.sportsxzone/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-sportsxzone.png" alt="" loading="lazy"><br>SportXZone</a>
+      <a class="app" href="/app/com.apkpure.aegon/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-apkpure.png" alt="" loading="lazy"><br>APKPure</a>
+      <a class="app" href="/app/com.facebook.aura/"><img src="https://mbox-store-api.zawminhtet723.workers.dev/files/icon-muse.png" alt="" loading="lazy"><br>Muse</a>
+    </div>
       <div class="app">WhatsApp</div>
       <div class="app">Signal</div>
       <div class="app">Firefox</div>
