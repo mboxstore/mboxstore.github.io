@@ -140,7 +140,7 @@
     </table>
 
     <h3>Verify API</h3>
-    <pre><code>POST https://mbox-store-api.zawminhtet723.workers.dev/pay/iap/verify
+    <pre><code>POST https://store-api.sweorganization.com/pay/iap/verify
 Content-Type: application/json
 
 { "key": "PRO-7K2Q9P-4X8MND" }</code></pre>
@@ -184,7 +184,7 @@ import kotlin.concurrent.thread
  */
 object MboxIap {
 
-    private const val API_BASE = &quot;https://mbox-store-api.zawminhtet723.workers.dev&quot;
+    private const val API_BASE = &quot;https://store-api.sweorganization.com&quot;
     private const val STORE_PACKAGE = &quot;com.mbox.store&quot;
 
     sealed class Result {
