@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Developers — MBOX Store</title>
+<meta name="description" content="Publish your Android app on MBOX Store. Verified distribution, MBOX Pay in-app purchases with a license-key API, 90% revenue share.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+  :root{
+    --bg:#0d1310; --surface:#16211b; --surface2:#1c2a22;
+    --text:#eef5f0; --muted:#9db4a6; --accent:#2ec4b6;
+    --border:#26382e;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);
+    font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px}
+  header{padding:40px 0 4px}
+  .back{color:var(--accent);text-decoration:none;font-size:14px}
+  h1{font-size:30px;font-weight:800;margin-top:14px}
+  .tagline{color:var(--muted);font-size:16px;margin-top:6px}
+  section{margin:34px 0}
+  h2{font-size:20px;font-weight:700;margin-bottom:14px}
+  h3{font-size:16px;font-weight:700;margin:20px 0 8px}
+  .feat{display:grid;gap:10px}
+  .feat div{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 16px}
+  .feat b{display:block;font-size:15.5px;margin-bottom:2px}
+  .feat p{color:var(--muted);font-size:14px}
+  ul.list, ol.steps{margin-left:20px;color:var(--muted);font-size:15px}
+  ul.list li, ol.steps li{margin:6px 0}
+  ul.list b, ol.steps b{color:var(--text)}
+  .fee{background:var(--surface2);border:1px solid var(--border);border-radius:12px;
+    padding:16px;text-align:center}
+  .fee .big{font-size:30px;font-weight:800;color:var(--accent)}
+  .fee p{color:var(--muted);font-size:14px;margin-top:4px}
+  code{background:var(--surface2);border:1px solid var(--border);border-radius:6px;
+    padding:1px 6px;font-size:13px;color:var(--text)}
+  pre{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+    padding:14px 16px;overflow-x:auto;margin:10px 0}
+  pre code{background:none;border:none;padding:0;font-size:12.5px;line-height:1.5;
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;white-space:pre}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:10px 0}
+  th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--surface2);font-weight:700}
+  td{color:var(--muted)}
+  td code{color:var(--text)}
+  p.note{color:var(--muted);font-size:14.5px;margin:8px 0}
+  .cta{margin:30px 0;text-align:center}
+  .btn{display:inline-block;background:var(--accent);color:#06251f;font-weight:800;
+    font-size:17px;text-decoration:none;padding:14px 30px;border-radius:14px}
+  footer{border-top:1px solid var(--border);margin-top:44px;padding:22px 0 34px;
+    text-align:center;color:var(--muted);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none;margin:0 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="back" href="index.html">← MBOX Store</a>
+    <h1>For Developers</h1>
+    <p class="tagline">Publish your app on MBOX Store — reach Android users who can't rely on Google Play, with verified distribution and built-in payments.</p>
+  </header>
+
+  <section>
+    <h2>Why publish here</h2>
+    <div class="feat">
+      <div><b>Reach</b>
+        <p>Your app is listed in the store catalog and discoverable by every MBOX Store user, with in-app updates delivered automatically.</p></div>
+      <div><b>Trust</b>
+        <p>Every listing is verified — package name, signing certificate and SHA-256 hash are checked before install. Users know your app is the genuine one.</p></div>
+      <div><b>Monetization built in</b>
+        <p>Sell your app or offer in-app purchases through MBOX Pay — users pay with Telegram Stars, prepaid Balance or USDT, no payment integration of your own needed.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fee">
+      <div class="big">90% / 10%</div>
+      <p>You keep 90% of every sale. MBOX Store takes a flat 10% fee on paid apps and in-app purchases. Listing is free.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>How listing works</h2>
+    <ol class="steps">
+      <li>Open the <b>Developer Console</b> in our Telegram bot <b>@mboxstoreappbot</b> and register as a developer.</li>
+      <li>Submit your <b>APK</b> through the console — it must be signed with <b>your own release key</b>.</li>
+      <li>Your submission is screened (package, version, permissions, certificate, VirusTotal) and reviewed against the listing rules below.</li>
+      <li>Updates: submit the new APK the same way — it must keep the <b>same package name</b>, the <b>same signing certificate</b> and a <b>higher version code</b>.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Listing rules</h2>
+    <ul class="list">
+      <li><b>Original apps only</b> — you must own the app or have the right to distribute it.</li>
+      <li>No modified, repacked or cracked versions of other developers' apps.</li>
+      <li>No apps that imitate banks, payment services or other brands.</li>
+      <li>No online-loan apps and no unlicensed gambling apps.</li>
+      <li>Permissions must match what the app actually does.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>In-app purchases — the developer kit</h2>
+    <p class="note">No SDK and no store update needed. Your app opens MBOX Store for the purchase, the buyer receives a <b>license key</b>, and your app verifies that key against one API call.</p>
+
+    <h3>How a purchase flows</h3>
+    <ol class="steps">
+      <li>Your app shows a <b>Buy</b> button. Tapping it opens MBOX Store on your app's page.</li>
+      <li>The buyer pays with <b>Telegram Stars</b>, <b>Balance</b> or <b>USDT (TON)</b>. Prices come from your catalog entry — never from the app — so they cannot be tampered with.</li>
+      <li>As soon as the order is paid, the store bot <b>DMs the buyer a license key</b> like <code>PRO-7K2Q9P-4X8MND</code>. The key also appears in the buyer's order history inside MBOX Store.</li>
+      <li>The buyer pastes the key into your app. Your app calls the verify API once, caches the result, and unlocks the product.</li>
+    </ol>
+
+    <h3>Listing an IAP product</h3>
+    <p class="note">IAP products live in your app's catalog entry. Ask the store team to add an <code>iap</code> list like this:</p>
+    <pre><code>"iap": [
+  {
+    "id": "pro_unlock",
+    "label": "Pro Unlock",
+    "priceStars": 250,
+    "priceUsdt": 4.5,
+    "keyDelivery": true,
+    "keyPrefix": "PRO",
+    "durationDays": 0
+  }
+]</code></pre>
+    <table>
+      <tr><th>Field</th><th>Meaning</th></tr>
+      <tr><td><code>id</code></td><td>Stable product id. Never reuse an id for a different product.</td></tr>
+      <tr><td><code>label</code></td><td>Shown to the buyer at checkout and in the key DM.</td></tr>
+      <tr><td><code>priceStars</code> / <code>priceUsdt</code></td><td>Price per rail. Omit or 0 = not sold on that rail.</td></tr>
+      <tr><td><code>keyDelivery</code></td><td><code>true</code> = the store issues a license key for this product.</td></tr>
+      <tr><td><code>keyPrefix</code></td><td>Key prefix, up to 6 letters/digits (default <code>MBX</code>).</td></tr>
+      <tr><td><code>durationDays</code></td><td><code>0</code> = the key never expires. <code>30</code> = a 30-day key (subscriptions).</td></tr>
+    </table>
+
+    <h3>Verify API</h3>
+    <pre><code>POST https://mbox-store-api.zawminhtet723.workers.dev/pay/iap/verify
+Content-Type: application/json
+
+{ "key": "PRO-7K2Q9P-4X8MND" }</code></pre>
+    <p class="note">The key is the credential — no API key or account is needed. Input is case-insensitive and surrounding spaces are ignored.</p>
+    <p class="note">Active key (HTTP 200):</p>
+    <pre><code>{ "ok": true, "status": "active", "package": "com.example.app",
+  "productId": "pro_unlock", "expiresAt": 0 }</code></pre>
+    <p class="note"><code>expiresAt</code> is a Unix time in milliseconds; <code>0</code> means no expiry. Not active (HTTP 200): <code>{ "ok": false, "error": "not_found" }</code></p>
+    <table>
+      <tr><th><code>error</code></th><th>Meaning</th><th>What your app should do</th></tr>
+      <tr><td><code>not_found</code></td><td>No such key was ever issued.</td><td>Ask the user to check the key and re-enter it.</td></tr>
+      <tr><td><code>expired</code></td><td>The key's duration has run out (<code>expiresAt</code> is included).</td><td>Offer renewal — the user buys again in MBOX Store and gets a new key.</td></tr>
+      <tr><td><code>revoked</code></td><td>The key was revoked (refund or abuse).</td><td>Keep the product locked.</td></tr>
+      <tr><td><code>bad key</code> (HTTP 400)</td><td>Empty/missing <code>key</code> field.</td><td>Client bug — always send a non-empty key.</td></tr>
+    </table>
+    <p class="note">Also check that <code>package</code> and <code>productId</code> in an <code>active</code> answer match <b>your</b> app and the product being unlocked. Verify when the user enters the key, cache the result, and for expiring keys re-verify at most once a day. If the device is offline, keep the last known state until the cached expiry — never lock a paying user out over a network hiccup.</p>
+
+    <h3>Kotlin sample — MboxIap.kt</h3>
+    <p class="note">A dependency-free client (HttpURLConnection + Android's built-in JSON) with <code>openStore()</code> and <code>verifyKey()</code>. Copy it into your project:</p>
+    <pre><code>package com.example.mboxiap
+
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
+import kotlin.concurrent.thread
+
+/**
+ * MBOX Store in-app purchase client (license-key flow).
+ *
+ * No dependencies beyond the Android framework. See DEVELOPER-IAP.md.
+ *
+ * Flow:
+ *  1. Call openStore() from your Buy button.
+ *  2. The buyer pays in MBOX Store and receives a license key from
+ *     the store bot (and in their order history).
+ *  3. The buyer pastes the key into your app; call verifyKey() and
+ *     unlock when the result is Active for YOUR package + product.
+ */
+object MboxIap {
+
+    private const val API_BASE = &quot;https://mbox-store-api.zawminhtet723.workers.dev&quot;
+    private const val STORE_PACKAGE = &quot;com.mbox.store&quot;
+
+    sealed class Result {
+        /** Key is good. expiresAtMs == 0L means it never expires. */
+        data class Active(val expiresAtMs: Long) : Result()
+        object NotFound : Result()
+        data class Expired(val expiresAtMs: Long) : Result()
+        object Revoked : Result()
+        /** Wrong package/product for this key, or a network problem. */
+        data class Error(val message: String) : Result()
+    }
+
+    /**
+     * Opens MBOX Store so the user can buy. Falls back to your app&#x27;s
+     * web page when the store app is not installed.
+     */
+    fun openStore(context: Context, yourPackage: String) {
+        val launch = context.packageManager.getLaunchIntentForPackage(STORE_PACKAGE)
+        if (launch != null) {
+            context.startActivity(launch)
+        } else {
+            val web = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse(&quot;https://mboxstore.github.io/app/$yourPackage&quot;)
+            )
+            context.startActivity(web)
+        }
+    }
+
+    /**
+     * Verifies a license key for [expectedPackage] + [expectedProductId].
+     * Runs the network call on a background thread; [callback] is
+     * invoked on that same background thread — hop to the UI thread
+     * inside your callback if you touch views.
+     */
+    fun verifyKey(
+        key: String,
+        expectedPackage: String,
+        expectedProductId: String,
+        callback: (Result) -&gt; Unit
+    ) {
+        thread {
+            val result = try {
+                val conn = URL(&quot;$API_BASE/pay/iap/verify&quot;).openConnection()
+                    as HttpURLConnection
+                conn.requestMethod = &quot;POST&quot;
+                conn.setRequestProperty(&quot;Content-Type&quot;, &quot;application/json&quot;)
+                conn.connectTimeout = 15_000
+                conn.readTimeout = 15_000
+                conn.doOutput = true
+                val body = JSONObject().put(&quot;key&quot;, key.trim()).toString()
+                conn.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
+                val text = (if (conn.responseCode in 200..299)
+                    conn.inputStream else conn.errorStream)
+                    ?.bufferedReader()?.use { it.readText() } ?: &quot;{}&quot;
+                parse(JSONObject(text), expectedPackage, expectedProductId)
+            } catch (e: Exception) {
+                Result.Error(e.message ?: &quot;network error&quot;)
+            }
+            callback(result)
+        }
+    }
+
+    private fun parse(
+        json: JSONObject,
+        expectedPackage: String,
+        expectedProductId: String
+    ): Result {
+        if (!json.optBoolean(&quot;ok&quot;)) {
+            return when (json.optString(&quot;error&quot;)) {
+                &quot;not_found&quot; -&gt; Result.NotFound
+                &quot;expired&quot; -&gt; Result.Expired(json.optLong(&quot;expiresAt&quot;))
+                &quot;revoked&quot; -&gt; Result.Revoked
+                else -&gt; Result.Error(json.optString(&quot;error&quot;, &quot;unknown error&quot;))
+            }
+        }
+        // A key only unlocks the product it was issued for — never
+        // accept a key belonging to another app or product.
+        if (json.optString(&quot;package&quot;) != expectedPackage ||
+            json.optString(&quot;productId&quot;) != expectedProductId
+        ) {
+            return Result.Error(&quot;key is for a different product&quot;)
+        }
+        return Result.Active(json.optLong(&quot;expiresAt&quot;))
+    }
+}</code></pre>
+
+    <h3>Fees and payouts</h3>
+    <ul class="list">
+      <li>Store fee: <b>10%</b> of paid app and IAP sales; you receive <b>90%</b>. Free apps and free products are never charged.</li>
+      <li>Set your payout TON wallet in the Developer Console — the same wallet receives app-sale and IAP payouts.</li>
+      <li>A refunded order's key is revoked by the store team; a revoked key stops verifying immediately.</li>
+      <li>Keys are issued for <b>paid orders only</b>, at most one per order, automatically — there is nothing for you to call at purchase time.</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <a class="btn" href="https://t.me/mboxstoreappbot">Open the Developer Console</a>
+  </div>
+
+  <footer>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <div style="margin-top:8px">© 2026 MBOX Store</div>
+  </footer>
+
+</div>
+</body>
+</html>
